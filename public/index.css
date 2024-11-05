@@ -1,6 +1,16 @@
+html, body {
+  height: 100%;                   
+  margin: 0;                       
+}
+
+body {
+  display: flex;                   
+  flex-direction: column;
+}
+
 :root {
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;  
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     line-height: 1.5;
     font-weight: 200;
@@ -23,14 +33,14 @@
       border-radius: 5px;
       display: block;
       align-items: center;
-      max-width: 800px; /* Limit the width to avoid full stretch */
-      box-sizing: border-box; /* Ensure padding doesn’t expand width */
-      }
+      max-width: 800px; 
+      box-sizing: border-box; 
+    }
 
 
 
-
-  input[type="text"]{
+  #new-task-title
+  {
     font-size: 1.6rem;
     padding: 10px;
     border: 2px solid hsla(0%, 0%, 80%, 0.5);
@@ -38,7 +48,8 @@
     color: hsla(0%, 0%, 0%, 0.5);
   }
 
-  button{
+  button
+  {
     font-size: 1.7rem;
     font-weight: bold;
     padding: 10px 20px;
@@ -61,7 +72,6 @@
   }
 
   h1 {
-    display: inline-block;
     font-size: 3.2em;
     line-height: 1.1;
     align-items: center;
@@ -72,7 +82,6 @@
     margin-left:20px;
   }
   #delete-button{
-    display: inline-block;
     float: right;
   }
   #move-button{
@@ -80,3 +89,19 @@
     float: left;
     margin-top: 5px;
   }
+  #logo {
+    margin-top: 10px;
+    display: block;
+    width: 100px;
+    height: 50px; 
+  }
+
+  #footer{
+    background-color: #333;            /* Dark background color */
+    rgba(255, 255, 255, 0.87);                      /* White text color */                  /* Padding on top and bottom */
+    text-align: center;                /* Center-align text */
+    font-size: 0.9em;
+    margin-top: auto;
+  }
+
+  
