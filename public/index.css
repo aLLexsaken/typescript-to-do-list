@@ -1,14 +1,82 @@
-#img {
-  display: block;
-  margin: auto;
-  height: 128px;
-  width: 128px;
-  padding: 2rem;
-}
+:root {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 200;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+  }
 
-#canvas {
-  display: block;
-  margin: 2rem auto;
-  width: 540px;
-  height: 540px;
-}
+    li{
+      font-size: 2rem;
+      font-weight: bold;
+      padding: 10px;
+      margin: 10px auto;  /* Center the items and add space between them */
+      border: 3px solid grey;
+      border-radius: 5px;
+      display: block;
+      align-items: center;
+      max-width: 800px; /* Limit the width to avoid full stretch */
+      box-sizing: border-box; /* Ensure padding doesn’t expand width */
+      }
+
+
+
+
+  input[type="text"]{
+    font-size: 1.6rem;
+    padding: 10px;
+    border: 2px solid hsla(0%, 0%, 80%, 0.5);
+    border-radius: 5px;
+    color: hsla(0%, 0%, 0%, 0.5);
+  }
+
+  button{
+    font-size: 1.7rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0,5 ease;
+  }
+   
+  button:hover{
+    background-color: rgba(243, 224, 224, 0.55);
+  }
+
+    #new-task-form{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    
+  }
+
+  h1 {
+    display: inline-block;
+    font-size: 3.2em;
+    line-height: 1.1;
+    align-items: center;
+  }
+  #delete-Button, #move-button{
+    padding:8px 12px;
+    font-size: 1.4rem;
+    margin-left:20px;
+  }
+  #delete-button{
+    display: inline-block;
+    float: right;
+  }
+  #move-button{
+    padding-bottom: 2px;
+    float: left;
+    margin-top: 5px;
+  }
