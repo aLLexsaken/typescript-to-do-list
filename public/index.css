@@ -12,11 +12,10 @@ body {
     scrollbar-width: none; 
     -ms-overflow-style: none;  
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    line-height: 1.5;
     font-weight: 200;
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-image: url("img.jpeg");
+    background-color: #242424;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -33,19 +32,30 @@ body {
       border-radius: 5px;
       display: block;
       align-items: center;
-      max-width: 800px; 
+      max-width: 700px; 
       box-sizing: border-box; 
+      background-color: #333;
     }
-
+#checkbox{
+  transform:scale(2);
+  float: left;
+  margin-top: 18px;
+  margin-right: 20px;
+}
 
 
   #new-task-title
   {
     font-size: 1.6rem;
     padding: 10px;
-    border: 2px solid hsla(0%, 0%, 80%, 0.5);
-    border-radius: 5px;
+    border-radius: 30px;
     color: hsla(0%, 0%, 0%, 0.5);
+  }
+  #taskbar{
+    display: flex;
+    margin: 20px auto; 
+    align-items: center;
+    
   }
 
   button
@@ -53,16 +63,27 @@ body {
     font-size: 1.7rem;
     font-weight: bold;
     padding: 10px 20px;
-    color: white;
+    color: hsla(0%, 0%, 0%, 0.5);
     border:none;
-    border-radius: 5px;
+    border-radius: 30px;
     cursor: pointer;
-    transition: background-color 0,5 ease;
+
+  }
+
+  #add-button
+  {
+    border: none;
+    padding: 10px 20px;
+    color: hsla(0%, 0%, 0%, 0.5);
+    border-radius: 30px; /* Right side rounded */
+    cursor: pointer;
+    transition: background-color 0.2s ease;
   }
    
   button:hover{
     background-color: rgba(243, 224, 224, 0.55);
   }
+
 
     #new-task-form{
     font-family: Arial, Helvetica, sans-serif;
@@ -76,13 +97,15 @@ body {
     line-height: 1.1;
     align-items: center;
   }
-  #delete-Button, #move-button{
+  #delete-button, #move-button{
     padding:8px 12px;
     font-size: 1.4rem;
-    margin-left:20px;
+    margin-left: 5px;
   }
-  #delete-button{
-    float: right;
+  #delete-Button{
+    float:right;
+    margin-top: -7px;
+    background: none;
   }
   #move-button{
     padding-bottom: 2px;
@@ -96,10 +119,25 @@ body {
     height: 50px; 
   }
 
-  #footer{        
+  #footer{
+    background-color: #333;        
     color:rgba(255, 255, 255, 0.87);                      
     font-size: 0.9em;
     margin-top: auto;
   }
 
   
+
+ul{
+    padding-left:inherit;
+  }
+  #all-btn, #pending-btn, #completed-btn{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    margin-left: 40px;
+    font-size: 1.3rem;
+  }
+  label{
+    margin-right: 65px;
+  }
